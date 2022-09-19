@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランディングページ</title>
+    <link href="https://fonts.google.com/noto/specimen/Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/safari-font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_sp.css">
+</head>
+
+<body class="page-mypage-profile mypage">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.svg"></a>
+            </div>
+            <div class="notice">
+                <div class="notice-bell">
+                    <img src="assets/img/bell.png">
+                    <p>10</p>
+                </div>
+                <div class="notice-message">
+                    <img src="assets/img/message.png">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="menu_btn">
+                <div class="container" onclick="openNav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <p class="sp-menu">MENU</p>
+                <p class="sp-menu-close">CLOSE</p>
+            </div>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <div class="sp-profile-header">
+                        <div class="avatar">
+                            <img src="assets/img/avatar.png">
+                        </div>
+                        <div class="avatar-content">
+                            <h3>ボディ太郎</h3>
+                            <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="sp-profile-menu">
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">レッスン管理<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">登録者情報<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">メッセージ<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">スケジュール<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                        </div>
+                    </div>
+                    <div class="sp-btn-header">
+                        <a href="contact.html">お問い合わせ</a>
+                    </div>
+                    <div class="sp-logout">
+                        <img src="assets/img/logout-sp.png">
+                        <p>ログアウト</p>
+                    </div>
+                    </div>
+                </div> 
+            <div class="mypage-contact-header">
+                <a href="contact.html">お問い合わせ</a>
+            </div>            
+        </div>
+        <div class="main">
+            <section class="left-side">
+                <div class="popup">
+                    <div class="popup-title">
+                        <img src="assets/img/bell-black.png">
+                        <h3>お知らせ</h3>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>メンテナンスのお知らせ</h5>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>「〇〇〇〇」に予約がありました</h5>
+                    </div>
+                </div>
+                <div class="profile-header">
+                    <div class="avatar">
+                        <img src="assets/img/avatar.png">
+                    </div>
+                    <div class="avatar-content">
+                        <h3>ボディ太郎</h3>
+                        <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="profile-menu">
+                    <div class="profile-menu-item">
+                        <a href="#">マイページTOP<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <p>トレーナーメニュー</p>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">レッスン管理<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">登録者情報<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">メッセージ<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">スケジュール<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                    </div>
+                </div>
+                <div class="logout">
+                    <img src="assets/img/logout.png">
+                    <p>ログアウト</p>
+                </div>
+            </section>
+
+            <section class="main-body">
+                <div class="main-body-title">
+                    <h3>プロフィール管理</h3>
+                </div>
+                <div class="main-body-notice">
+                    <p class="userinfo-title">※サービスリリース後、公開されます。未記入でも登録は可能です。後からの変更も可能です</p>
+                    <div class="userinfo-input">
+                        <div class="userinfo-input-field">
+                            <p>ニックネーム</p>
+                            <input type="text" name="">
+                        </div>
+                        <div class="userinfo-input-field age-field">
+                            <p>年齢</p>
+                            <select name="age" id="age">
+                                <optgroup
+                                >
+                                    <option value="choose">選択してください</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                </optgroup>f
+                            </select>
+                        </div>
+                        <div class="userinfo-input-field gender-field">
+                            <p>性別</p>
+                            <div class="gender">
+                                <div class="gender-option">
+                                  <input type="radio" id="男性" name="男性" value="男性">
+                                  <label for="男性">男性</label>
+                                </div>
+                                <div class="gender-option">
+                                  <input type="radio" id="女性" name="女性" value="女性">
+                                  <label for="女性">女性</label>
+                                </div>
+                                <div class="gender-option">
+                                  <input type="radio" id="未回答" name="未回答" value="未回答">
+                                  <label for="未回答">未回答</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>生年月日</p>
+                            <div class="birthday">
+                                <div class="year-select">
+                                    <select name="year" id="year">
+                                        <optgroup>
+                                            <option value="-">-</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                        </optgroup>
+                                    </select>
+                                    <p>年</p>
+                                </div>
+                                <div class="month-select">
+                                    <select name="month" id="month">
+                                        <optgroup>
+                                            <option value="-">-</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </optgroup>
+                                    </select>
+                                    <p>月</p>
+                                </div>
+                                <div class="day-select">
+                                    <select name="day" id="day">
+                                        <optgroup>
+                                            <option value="-">-</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </optgroup>
+                                    </select>
+                                    <p>日</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>エリア</p>
+                            <div class="area-select">
+                                <select name="area" id="area">
+                                    <optgroup>
+                                        <option value="choose">選択してください</option>
+                                        <option value="東京">東京</option>
+                                    </optgroup>
+                                </select>
+                                <input type="text" name="" placeholder="エリアを自由に記入できます">
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>保有資格</p>
+                            <textarea id="certification" name="certification" rows="5" cols="33" placeholder="自由に記入できます"></textarea>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>経歴</p>
+                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder="自由に記入できます"></textarea>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>自己PR</p>
+                            <textarea id="pr" name="pr" rows="5" cols="33"></textarea>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>ターゲット層<br><span>※最大3個</span></p>
+                            <div class="target">
+                                <div>
+                                    <input type="checkbox" id="check1" name="check1">
+                                    <label for="check1">とにかく痩せたい！</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check2" name="check2">
+                                    <label for="check2">カッコいい体にボディメイクしたい！</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check3" name="check3">
+                                    <label for="check3">キレイになりたい！</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check4" name="check4">
+                                    <label for="check4">とにかくマッチョになりたい！</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check5" name="check5">
+                                    <label for="check5">体力・持久力をつけたい！</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check6" name="check6">
+                                    <label for="check6">若返りたい！</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>得意分野<br><span>※最大3個</span></p>
+                            <div class="speciality">
+                                <div>
+                                    <input type="checkbox" id="check7" name="check7">
+                                    <label for="check7">ダイエット・ボディメイク</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check8" name="check8">
+                                    <label for="check8">美容・アンチエイジング</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check9" name="check9">
+                                    <label for="check9">筋量・筋力アップ</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check10" name="check10">
+                                    <label for="check10">ジョギング・ランニング</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check11" name="check11">
+                                    <label for="check11">スポーツ・格闘技</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check12" name="check12">
+                                    <label for="check12">ヨガ・ピラティス</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check13" name="check13">
+                                    <label for="check13">ストレッチ＆コンディショニング</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check14" name="check14">
+                                    <label for="check14">加圧トレーニング</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check15" name="check15">
+                                    <label for="check15">リハビリテーション</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check16" name="check16">
+                                    <label for="check16">メタボリック・生活習慣病対策</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check17" name="check17">
+                                    <label for="check17">サプリメント・食事指導</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="check18" name="check18">
+                                    <label for="check18">体質遺伝子検査</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>よくある質問<br><span>※最大〇件</span></p>
+                            <div class="qa-field">
+                                <div class="question-add">
+                                    <h3>Q</h3>
+                                    <textarea id="ques" name="ques" rows="5" cols="33" placeholder="よくある質問を入力する"></textarea>
+                                </div>
+                                <div class="answer-add">
+                                    <h3>A</h3>
+                                    <textarea id="ans" name="ans" rows="5" cols="33" placeholder="質問の回答を入力する"></textarea>
+                                </div>
+                                <p class="del"><span>×</span>この質問を削除する</p>
+                                <div class="question-new">
+                                    <span>+</span>
+                                    <p>QAを追加する(あと〇件)</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>写真<br><span>※最大5枚</span></p>
+                            <div class="photo">
+                                <div class="photo-add">
+                                    <p>ファイルをアップロード</p>
+                                    <button class="btn-photo-add">写真を選択する</button>
+                                </div>
+                                <div class="photo-add">
+                                    <p>ファイルをアップロード</p>
+                                    <button class="btn-photo-add">写真を選択する</button>
+                                </div>
+                                <div class="photo-add">
+                                    <p>ファイルをアップロード</p>
+                                    <button class="btn-photo-add">写真を選択する</button>
+                                </div>
+                                <div class="photo-add">
+                                    <p>ファイルをアップロード</p>
+                                    <button class="btn-photo-add">写真を選択する</button>
+                                </div>
+                                <div class="photo-add">
+                                    <p>ファイルをアップロード</p>
+                                    <button class="btn-photo-add">写真を選択する</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>動画<br><span>※Youtubeのみ</span></p>
+                            <input type="text" name="" placeholder="iframeから始まるURLをペーストしてください">
+                        </div>
+                    </div>
+                    <button type="submit" class="userinfo-register">
+                        入力内容を登録
+                    </button>
+                </div>
+            </section>
+
+            <section class="works">
+                
+            </section>
+
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     <link rel="stylesheet" href="assets/css/style_sp.css">
 </head>
 
-<body class="page-mypage-top mypage">
+<body class="page-mypage-userinfo mypage">
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -86,6 +86,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 <a href="contact.html">お問い合わせ</a>
             </div>            
         </div>
+        <div class="register-complete-notice">
+            <p>登録者情報更新しました。</p>
+        </div>
         <div class="main">
             <section class="left-side">
                 <div class="popup">
@@ -142,38 +145,35 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 
             <section class="main-body">
                 <div class="main-body-title">
-                    <h3>運営からのお知らせ</h3>
+                    <h3>登録者情報</h3>
                 </div>
                 <div class="main-body-notice">
-                    <h6>2021.12.16</h6>
-                    <h5>メンテナンスのお知らせ</h5>
-                    <p>テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文</p>
-                </div>
-                <div class="main-body-bottom">
-                    <p>coming soon</p>
-                    <p>coming soon</p>
+                    <p class="userinfo-title">※サイトプロフィールには公開されません。<br>※サービスリリース後は売上ご入金のため住所や電話番号の入力、身分証のご提出が必要となります</p>
+                    <div class="userinfo-input">
+                        <div class="userinfo-input-field">
+                            <p>氏名</p>
+                            <input type="text" name="" placeholder="山田太郎">
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>メールアドレス</p>
+                            <input type="mail" name="" placeholder="test@gmail.com">
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>パスワード</p>
+                            <div class="pwd">
+                                <input type="password" name="" placeholder="****************">
+                                <p>※7文字以上の半角英数字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="userinfo-register">
+                        入力内容を登録
+                    </button>
                 </div>
             </section>
 
             <section class="works">
-                <div class="works-title">
-                    <h3>実績<span>(直近30日)</span></h3>
-                </div>
-                <div class="works-body">
-                    <div class="works-line">
-                        <p>成約売上額</p>
-                        <h5>0<span>円</span></h5>
-                    </div>
-                    <div class="works-line">
-                        <p>成約件数</p>
-                        <h5>0<span>件</span></h5>
-                    </div>
-                    <div class="works-line">
-                        <p>累計平均評価</p>
-                        <h5><i class="fa-solid fa-star"></i>&nbsp;4.8</h5>
-                    </div>
-                    <button type="submit"><a href="#">売上管理・振込申請</a></button>
-                </div>
+                
             </section>
 
         </div>

@@ -470,7 +470,7 @@ a.top-register button:hover{
 /* price */
 .price{
     background: url(../img/price-bk.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 18% 5% 15% 5%;
 }
 .price-content{
@@ -672,17 +672,26 @@ a.top-register button:hover{
     color: white;
     padding: 2% 0;
 }
+.footer-login{
+    background-color: #313131;
+    padding: 1.5% 0 0.5%;
+}
 .footer-menu a{
     color: white;
     padding: 0 2%;
 }
-.footer-menu a:last-child{
+.footer-menu a{
     border-left: 1px solid white;
+}
+.footer-menu a:first-child{
+    border-left: none;
 }
 .copyright{
     margin-top: 3%;
 }
-
+.footer-login .copyright{
+    margin-top: 2%;
+}
 .btn-fixed{
     display: none;
 }
@@ -850,7 +859,7 @@ html {
     text-align: left;
     margin-top: 3%;
 }
-input{
+input, select{
     background-color: #F0F0F0;
     border: none;
     border-radius: 5px;
@@ -1318,26 +1327,26 @@ input[type="checkbox"]{
 }
 
 /* sp navigation */
-body.page-mypage-top .btn-header a{
+.mypage-contact-header a{
     color: white;
 }
-body.page-mypage-top a{
+.mypage a{
     text-decoration: none;
 }
-body.page-mypage-top{
+.mypage {
     background-color: #F7F7F7;
 }
-.page-mypage-top .main{
+.mypage .main{
     display: flex;
     padding: 2%;
     justify-content: center;
 }
 .left-side{
-    padding: 2%;
     background-color: white;
     width: 20%;
     border-radius: 5px;
     position: relative;
+    height: 100%;
 }
 .main-body{
     width: 60%;
@@ -1349,13 +1358,14 @@ body.page-mypage-top{
     text-align: left;
 }
 .profile-header{
+    padding: 10%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 10%;
 }
 .avatar{
-    margin-right: 10%;
+    margin-right: 5%;
     display: flex;
 }
 .avatar-content h3{
@@ -1382,13 +1392,16 @@ body.page-mypage-top{
     line-height: 50px;
     text-align: left;
     color: #454545;
+    padding: 2% 5%;
 }
+
 .profile-menu-item:nth-child(7n) a, .profile-menu-item:nth-child(7n-1) a, .profile-menu-item:nth-child(7n-2) a{
     text-decoration-line: line-through!important;
     opacity: 0.5;
 }
 .profile-menu-item:nth-child(7n-5){
-    border-bottom: 1px solid #D1C74E  
+    border-bottom: 1px solid #D1C74E;
+    margin: 0 2%;  
 }
 .profile-menu-item:nth-child(7n-5) p{
     font-weight: 500;
@@ -1396,11 +1409,13 @@ body.page-mypage-top{
     line-height: 68px;
     text-align: left;
     color: #d1c74e;
+    padding: 2% 3%;
 }
 .logout{
     display: flex;
     align-items: center; 
     margin-top: 60%;
+    padding: 5%;
 }
 .logout img{
     margin-right: 5%;
@@ -1453,7 +1468,7 @@ body.page-mypage-top{
 .main-body-bottom p:first-child{
     background: url(../img/main-body-1.png) no-repeat;
     background-size: contain;
-    padding: 2% 5%;
+    padding: 3% 5%;
     font-weight: bold;
     font-size: 34px;
     line-height: 115px;
@@ -1465,7 +1480,7 @@ body.page-mypage-top{
 .main-body-bottom p:last-child{
     background: url(../img/main-body-2.png) no-repeat;
     background-size: contain;
-    padding: 2% 5%;
+    padding: 3% 5%;
     font-weight: bold;
     font-size: 34px;
     line-height: 115px;
@@ -1541,6 +1556,242 @@ body.page-mypage-top{
 .popup{
     display: none;
 }
+
+
+/* Mypage User info  */
+.userinfo-title{
+    padding: 2% 0;
+    border-bottom: 5px solid black;
+}
+.mypage input{
+    padding-left: 0;
+    text-indent: 20px;
+}
+.mypage .main-body-notice{
+    padding: 20px;
+    text-align: center;
+}
+.userinfo-input-field{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    padding: 2% 0px;
+    border-bottom: 1px dotted #707070;
+}
+.userinfo-input-field p{
+    font-size: 16px;
+    width: 20%;
+}
+.userinfo-input-field input{
+    width: 80%;
+}
+.pwd{
+    width: 80.3%;
+}
+.pwd input{
+    width: 100%;
+}
+.pwd p{
+    margin: 5px 0 0;
+    font-size: 10px;
+}
+.userinfo-register{
+    padding: 2% 13%;
+    border-radius: 5px;
+    background-color: #99C043;
+    border: 1px solid #6E9025;
+    color: white;
+    margin: 3%;
+    position: relative;
+    font-size: 14px;
+}
+.userinfo-register:after {
+    content: '\1F892';
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    margin-top: -5%;
+}
+.register-complete-notice{
+    position: absolute;
+    background-color: #F4EFCB;
+    padding: 10px 20px;
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+.register-complete-notice p{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+}
+
+
+
+/* mypage profile  */
+#age{
+    width: 30%;
+    padding-left: 0%;
+    text-indent: 20px;
+}
+
+.gender{
+    display: flex;
+    width: 35%;
+}
+.gender-option{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.gender-option input{
+    width: 10%;
+}
+.birthday{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.year-select, .month-select, .day-select{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+#year{
+    width: 8vw;
+}
+#month, #day{
+    width: 4vw;
+}
+.area-select{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+#area{
+    margin-right: 5%;
+}
+textarea{
+    width: 80%;
+    text-indent: 20px;
+    padding: 2% 0;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    border: none;
+}
+.target, .speciality{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+}
+.target div, .speciality div{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+.target input, .speciality input{
+    width: fit-content;
+}
+.qa-field{
+    width: 80%;
+}
+.question-add{
+    display: flex;
+    align-items: baseline;
+}
+#ques, #ans{
+    margin-left: 5%;
+    width: 100%;
+}
+.answer-add{
+    display: flex;
+    align-items: baseline;
+    margin: 5% 0 2% 5%;
+}
+.del{
+    text-align: right!important;
+    color: #006CFF!important;
+    width: auto!important;
+}
+.del span{
+    color: black;
+}
+.question-new{
+    display: flex;
+    align-items: center;
+    width: 96%;
+    border: 1px dotted grey;
+    padding: 1% 2%;
+    margin: 3% 0;
+}
+.question-new span{
+    font-size: 36px;
+    margin-right: 3%;
+}
+.question-new p{
+    color: #006CFF;
+    width: auto;
+}
+.photo{
+    width: 80%;
+}
+.photo-add{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+.photo-add p{
+    width: auto;
+}
+.btn-photo-add{
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+select {
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+  appearance: none;
+     background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1.5em + 2px), calc(100% - 15px) calc(1.5em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    0px 1.5em;
+  background-repeat: no-repeat;
+}
+
+/*
+select:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+*/
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 
 
 

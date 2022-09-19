@@ -145,3 +145,26 @@ var span = document.getElementsByClassName("close")[0];
 //         modal.style.display = "none";
 //     }
 // }
+var j = 1;
+$(document).ready(function() {
+    $('.notice-bell').click(function() {
+        if (j == 1) {
+            $('.popup').show();
+            j = 0;
+        }else{
+            $('.popup').hide();
+            j = 1;
+        }
+    });
+
+    $('.profile-menu .profile-menu-item').hover(function() {
+        $(this).css('background-color', '#D1C74E');
+        $(this).find('a').css('color', 'white');
+    }, function(){
+        $(this).css('background-color', 'white');
+        $(this).find('a').css('color', '#d1c74e');
+    });
+});
+
+
+
