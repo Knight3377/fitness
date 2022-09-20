@@ -146,7 +146,83 @@ var span = document.getElementsByClassName("close")[0];
 //     }
 // }
 var j = 1;
+
+
 $(document).ready(function() {
+
+    var lesson_image_height = $('.lesson-box-inner').innerHeight() + 2;
+    $('.lesson-image').css('height', lesson_image_height);
+
+    
+    //file upload part
+    $('#resetbtn1').hide();
+    $('#resetbtn2').hide();
+    $('#resetbtn3').hide();
+    $('#resetbtn4').hide();
+    $('#resetbtn5').hide();
+    $('#resetbtn1').on('click', function(e) {
+        var $el = $('#actual-btn1');
+        $el.wrap('<form>').closest(
+          'form').get(0).reset();
+        $el.unwrap();
+        $('span#file-chosen1').html('');
+        $('span#file-chosen1').html('<span id="file-chosen1">ファイルをアップロード</span>');
+        $('#resetbtn1').hide();
+    });
+    $('#resetbtn2').on('click', function(e) {
+        var $el = $('#actual-btn2');
+        $el.wrap('<form>').closest(
+          'form').get(0).reset();
+        $el.unwrap();
+        $('span#file-chosen2').html('');
+        $('span#file-chosen2').html('<span id="file-chosen2">ファイルをアップロード</span>');
+        $('#resetbtn2').hide();
+    });
+    $('#resetbtn3').on('click', function(e) {
+        var $el = $('#actual-btn3');
+        $el.wrap('<form>').closest(
+          'form').get(0).reset();
+        $el.unwrap();
+        $('span#file-chosen3').html('');
+        $('span#file-chosen3').html('<span id="file-chosen3">ファイルをアップロード</span>');
+        $('#resetbtn3').hide();
+    });
+    $('#resetbtn4').on('click', function(e) {
+        var $el = $('#actual-btn4');
+        $el.wrap('<form>').closest(
+          'form').get(0).reset();
+        $el.unwrap();
+        $('span#file-chosen4').html('');
+        $('span#file-chosen4').html('<span id="file-chosen4">ファイルをアップロード</span>');
+        $('#resetbtn4').hide();
+    });
+    $('#resetbtn5').on('click', function(e) {
+        var $el = $('#actual-btn5');
+        $el.wrap('<form>').closest(
+          'form').get(0).reset();
+        $el.unwrap();
+        $('span#file-chosen5').html('');
+        $('span#file-chosen5').html('<span id="file-chosen5">ファイルをアップロード</span>');
+        $('#resetbtn5').hide();
+    });
+    //end
+
+
+    //question & answer add part
+    $('.qa-field').find('.del').hide();
+    $('.question-new').on('click', function(e) {
+        $('<div class="qa-upload-box  qa-box-new"><div class="question-add"><h3>Q</h3><textarea id="ques" name="ques" rows="5" cols="33" placeholder="よくある質問を入力する"></textarea></div><div class="answer-add"><h3>A</h3><textarea id="ans" name="ans" rows="5" cols="33" placeholder="質問の回答を入力する"></textarea></div><p class="del" style="display: block;"><span>×</span>この質問を削除する</p></div>').insertBefore('.question-new');
+        // $('.qa-field').find('.del').show();
+    });
+
+    $(document).on('click','.qa-box-new .del',function(){
+        var $el = $(this).parent('.qa-box-new');
+        $el.closest('.qa-box-new').remove();
+    });
+
+    //end
+
+
     $('.notice-bell').click(function() {
         if (j == 1) {
             $('.popup').show();
@@ -166,5 +242,53 @@ $(document).ready(function() {
     });
 });
 
+//file upload
+
+const actualBtn1 = document.getElementById('actual-btn1');
+const actualBtn2 = document.getElementById('actual-btn2');
+const actualBtn3 = document.getElementById('actual-btn3');
+const actualBtn4 = document.getElementById('actual-btn4');
+const actualBtn5 = document.getElementById('actual-btn5');
+
+const fileChosen1 = document.getElementById('file-chosen1');
+const fileChosen2 = document.getElementById('file-chosen2');
+const fileChosen3 = document.getElementById('file-chosen3');
+const fileChosen4 = document.getElementById('file-chosen4');
+const fileChosen5 = document.getElementById('file-chosen5');
+
+actualBtn1.addEventListener('change', function(){
+  fileChosen1.textContent = this.files[0].name;
+      console.log($(this).parent('.photo-add').find('.del'));
+      $(this).parent('.photo-add').find('.del').show();
+});
+actualBtn2.addEventListener('change', function(){
+  fileChosen2.textContent = this.files[0].name;
+      console.log($(this).parent('.photo-add').find('.del'));
+      $(this).parent('.photo-add').find('.del').show();
+});
+actualBtn3.addEventListener('change', function(){
+  fileChosen3.textContent = this.files[0].name;
+      console.log($(this).parent('.photo-add').find('.del'));
+      $(this).parent('.photo-add').find('.del').show();
+});
+
+actualBtn4.addEventListener('change', function(){
+  fileChosen4.textContent = this.files[0].name;
+      console.log($(this).parent('.photo-add').find('.del'));
+      $(this).parent('.photo-add').find('.del').show();
+});
+actualBtn5.addEventListener('change', function(){
+  fileChosen5.textContent = this.files[0].name;
+      console.log($(this).parent('.photo-add').find('.del'));
+      $(this).parent('.photo-add').find('.del').show();
+});
 
 
+
+//published part
+var $select = $('select#order');
+$select.each(function() {
+    $(this).addClass($(this).children(':selected').val());
+}).on('change', function(ev) {
+    $(this).attr('class', '').addClass($(this).children(':selected').val());
+});

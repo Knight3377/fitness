@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランディングページ</title>
+    <link href="https://fonts.google.com/noto/specimen/Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/safari-font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_sp.css">
+</head>
+
+<body class="page-mypage-lesson mypage">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.svg"></a>
+            </div>
+            <div class="notice">
+                <div class="notice-bell">
+                    <img src="assets/img/bell.png">
+                    <p>10</p>
+                </div>
+                <div class="notice-message">
+                    <img src="assets/img/message.png">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="menu_btn">
+                <div class="container" onclick="openNav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <p class="sp-menu">MENU</p>
+                <p class="sp-menu-close">CLOSE</p>
+            </div>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <div class="sp-profile-header">
+                        <div class="avatar">
+                            <img src="assets/img/avatar.png">
+                        </div>
+                        <div class="avatar-content">
+                            <h3>ボディ太郎</h3>
+                            <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="sp-profile-menu">
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">レッスン管理<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">登録者情報<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">メッセージ<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">スケジュール<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                        </div>
+                    </div>
+                    <div class="sp-btn-header">
+                        <a href="contact.html">お問い合わせ</a>
+                    </div>
+                    <div class="sp-logout">
+                        <img src="assets/img/logout-sp.png">
+                        <p>ログアウト</p>
+                    </div>
+                    </div>
+                </div> 
+            <div class="mypage-contact-header">
+                <a href="contact.html">お問い合わせ</a>
+            </div>            
+        </div>
+        <div class="main">
+            <section class="left-side">
+                <div class="popup">
+                    <div class="popup-title">
+                        <img src="assets/img/bell-black.png">
+                        <h3>お知らせ</h3>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>メンテナンスのお知らせ</h5>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>「〇〇〇〇」に予約がありました</h5>
+                    </div>
+                </div>
+                <div class="profile-header">
+                    <div class="avatar">
+                        <img src="assets/img/avatar.png">
+                    </div>
+                    <div class="avatar-content">
+                        <h3>ボディ太郎</h3>
+                        <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="profile-menu">
+                    <div class="profile-menu-item">
+                        <a href="#">マイページTOP<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <p>トレーナーメニュー</p>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">レッスン管理<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">登録者情報<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">メッセージ<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">スケジュール<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                    </div>
+                </div>
+                <div class="logout">
+                    <img src="assets/img/logout.png">
+                    <p>ログアウト</p>
+                </div>
+            </section>
+
+            <section class="main-body">
+                <div class="main-body-title">
+                    <h3>レッスン管理</h3>
+                </div>
+                <div class="main-body-notice">
+                    <button type="submit" class="btn-lesson-add"><p>新しく追加する<span>+</span></p></button>
+                    <div class="lesson-box">
+                        <div class="lesson-box-inner">
+                            <div class="lesson-content">
+                                <h5>メニュータイトルメニュータイトルメニュー…</h5>
+                                <p>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説…</p>
+                                <div class="lesson-state">
+                                    <p class="published">公開中</p>
+                                    <h2>60<span>分</span>&nbsp;10,000<span>円</span></h2>
+                                </div>
+                            </div>  
+                            <div class="lesson-image">
+                                <img src="assets/img/lesson.png">
+                            </div>    
+                        </div>
+                        <a href="#">編集する&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                    
+                    <div class="lesson-box">
+                        <div class="lesson-box-inner">
+                            <div class="lesson-content">
+                                <h5>メニュータイトルメニュータイトルメニュー…</h5>
+                                <p>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説…</p>
+                                <div class="lesson-state">
+                                    <p class="unpublished">非公開中</p>
+                                    <h2><span>全</span>10<span>回</span>60<span>分</span>&nbsp;240,000<span>円</span></h2>
+                                </div>
+                            </div>  
+                            <div class="lesson-image">
+                                <img src="assets/img/lesson.png">
+                            </div>
+                        </div> 
+                        <a href="#">編集する&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>          
+                    </div>
+                </div>
+            </section>
+
+            <section class="works">
+            </section>
+
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

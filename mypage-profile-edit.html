@@ -14,7 +14,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     <link rel="stylesheet" href="assets/css/style_sp.css">
 </head>
 
-<body class="page-mypage-profile mypage">
+<body class="page-mypage-profile-edit mypage">
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -149,7 +149,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                     <div class="userinfo-input">
                         <div class="userinfo-input-field">
                             <p>ニックネーム</p>
-                            <input type="text" name="">
+                            <input type="text" name="" placeholder="ボディ太郎">
                         </div>
                         <div class="userinfo-input-field age-field">
                             <p>年齢</p>
@@ -157,17 +157,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 <optgroup
                                 >
                                     <option value="choose">選択してください</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                </optgroup>
+                                    <option value="27">27歳</option>
+                                    <option value="28">28歳</option>
+                                    <option value="29">29歳</option>
+                                    <option value="30" selected>30歳</option>
+                                </optgroup>f
                             </select>
                         </div>
                         <div class="userinfo-input-field gender-field">
                             <p>性別</p>
                             <div class="gender">
                                 <div class="gender-option">
-                                  <input type="radio" id="男性" name="gender" value="男性">
+                                  <input type="radio" id="男性" name="gender" value="男性" checked>
                                   <label for="男性">男性</label>
                                 </div>
                                 <div class="gender-option">
@@ -175,7 +176,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                   <label for="女性">女性</label>
                                 </div>
                                 <div class="gender-option">
-                                  <input type="radio" id="未回答" name="gender " value="未回答">
+                                  <input type="radio" id="未回答" name="gender" value="未回答">
                                   <label for="未回答">未回答</label>
                                 </div>
                             </div>
@@ -187,7 +188,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                     <select name="year" id="year">
                                         <optgroup>
                                             <option value="-">-</option>
-                                            <option value="2021">2021</option>
+                                            <option value="1991" selected>1991</option>
                                             <option value="2022">2022</option>
                                         </optgroup>
                                     </select>
@@ -196,7 +197,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 <div class="month-select">
                                     <select name="month" id="month">
                                         <optgroup>
-                                            <option value="-">-</option>
+                                            <option value="00">00</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -216,7 +217,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 <div class="day-select">
                                     <select name="day" id="day">
                                         <optgroup>
-                                            <option value="-">-</option>
+                                            <option value="00">00</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -260,33 +261,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 <select name="area" id="area">
                                     <optgroup>
                                         <option value="choose">選択してください</option>
-                                        <option value="東京都">東京都</option>
+                                        <option value="東京都" selected>東京都</option>
                                     </optgroup>
                                 </select>
-                                <input type="text" name="" placeholder="エリアを自由に記入できます">
+                                <input type="text" name="" placeholder="新宿区　新宿駅から5分">
                             </div>
                         </div>
                         <div class="userinfo-input-field">
                             <p>保有資格</p>
-                            <textarea id="certification" name="certification" rows="5" cols="33" placeholder="自由に記入できます"></textarea>
+                            <textarea id="certification" name="certification" rows="5" cols="33" placeholder="">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
                         </div>
                         <div class="userinfo-input-field">
                             <p>経歴</p>
-                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder="自由に記入できます"></textarea>
+                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder="">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
                         </div>
                         <div class="userinfo-input-field">
                             <p>自己PR</p>
-                            <textarea id="pr" name="pr" rows="5" cols="33"></textarea>
+                            <textarea id="pr" name="pr" rows="5" cols="33" placeholder="">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</textarea>
                         </div>
                         <div class="userinfo-input-field">
                             <p>ターゲット層<br><span>※最大3個</span></p>
                             <div class="target">
                                 <div>
-                                    <input type="checkbox" id="check1" name="check1">
+                                    <input type="checkbox" id="check1" name="check1" checked>
                                     <label for="check1">とにかく痩せたい！</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="check2" name="check2">
+                                    <input type="checkbox" id="check2" name="check2" checked>
                                     <label for="check2">カッコいい体にボディメイクしたい！</label>
                                 </div>
                                 <div>
@@ -311,7 +312,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                             <p>得意分野<br><span>※最大3個</span></p>
                             <div class="speciality">
                                 <div>
-                                    <input type="checkbox" id="check7" name="check7">
+                                    <input type="checkbox" id="check7" name="check7" checked>
                                     <label for="check7">ダイエット・ボディメイク</label>
                                 </div>
                                 <div>
@@ -319,7 +320,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                     <label for="check8">美容・アンチエイジング</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="check9" name="check9">
+                                    <input type="checkbox" id="check9" name="check9" checked>
                                     <label for="check9">筋量・筋力アップ</label>
                                 </div>
                                 <div>
@@ -327,7 +328,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                     <label for="check10">ジョギング・ランニング</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" id="check11" name="check11">
+                                    <input type="checkbox" id="check11" name="check11" checked>
                                     <label for="check11">スポーツ・格闘技</label>
                                 </div>
                                 <div>
@@ -379,6 +380,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                     <p>QAを追加する(あと〇件)</p>
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="userinfo-input-field">
                             <p>写真<br><span>※最大5枚</span></p>
@@ -432,7 +434,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                         </div>
                         <div class="userinfo-input-field">
                             <p>動画<br><span>※Youtubeのみ</span></p>
-                            <input type="text" name="" placeholder="iframeから始まるURLをペーストしてください">
+                            <input type="text" name="" placeholder="<iframe width=“560” height=“315” src=“https://www.youtube.com/embed/GqFrgJxZvOs” title=“YouTube video player” frameborder=“0” allow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe>">
                         </div>
                     </div>
                     <button type="submit" class="userinfo-register">

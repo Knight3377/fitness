@@ -1574,7 +1574,7 @@ input[type="checkbox"]{
 .userinfo-input-field{
     display: flex;
     /*justify-content: space-between;*/
-    align-items: center;
+    align-items: baseline;
     padding: 2% 0px;
     border-bottom: 1px dotted #707070;
 }
@@ -1629,6 +1629,25 @@ input[type="checkbox"]{
 
 
 /* mypage profile  */
+input[type=checkbox]:checked::before{
+    content: "";
+    display: block;
+    background-color: #D1C74E;
+    font-family: "Montserrat";
+    border-radius: 2px;
+    height: 15px;
+    width: 15px;
+}
+input[type=checkbox]:checked::after {
+     content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="white" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>');
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 1px;
+}
+input[type=radio]:checked:before{
+  background:gold;
+}
 #age{
     width: 30%;
     padding-left: 0%;
@@ -1660,24 +1679,25 @@ input[type="checkbox"]{
 }
 #year{
     width: 8vw;
+    text-indent: 10px;
 }
 #month, #day{
     width: 4vw;
+    text-indent: 10px;
 }
 .area-select{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 70%;
-    flex-wrap: wrap;
 }
 #area{
     margin-right: 5%;
+    padding-left: 20px;
 }
 textarea{
-    width: 80%;
-    text-indent: 20px;
-    padding: 2% 0;
+    width: 78%;
+    padding: 2% 0 0 2%;
     background-color: #F0F0F0;
     border-radius: 5px;
     border: none;
@@ -1695,6 +1715,7 @@ textarea{
 }
 .target input, .speciality input{
     width: fit-content;
+    position: relative;
 }
 .qa-field{
     width: 80%;
@@ -1716,6 +1737,7 @@ textarea{
     text-align: right!important;
     color: #006CFF!important;
     width: auto!important;
+    margin-left: 5%;
 }
 .del span{
     color: black;
@@ -1744,6 +1766,10 @@ textarea{
     align-items: center;
     margin: 2%;
 }
+.photo-add span{
+    width: 250px;
+    text-align: left;
+}
 .photo-add p{
     width: auto;
 }
@@ -1752,6 +1778,8 @@ textarea{
     background-color: white;
     border-radius: 5px;
     padding: 5px 20px;
+    border: 1px solid;
+    font-size: 14px;
 }
 
 select {
@@ -1791,6 +1819,196 @@ select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
+
+
+/* lesson management page */
+
+.btn-lesson-add{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #D1C74E;
+    border: none;
+    margin: 1%;
+}
+.btn-lesson-add p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    justify-content: space-evenly;
+}
+.btn-lesson-add span{
+    /*margin-left: 15%;*/
+    font-size: 20px;
+}
+.lesson-box{
+    margin: 1%;
+}
+.lesson-box-inner{
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+}
+.lesson-content{
+    padding: 3%;
+    width: 68%;
+}
+.lesson-content h5{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+}
+.lesson-content p{
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+    margin: 2% 0;
+}
+.lesson-image{
+    width: 32%;
+    background: url(../img/lesson.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.lesson-state{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.published{
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #fff!important;
+    padding: 5px 10px;
+    background-color: #D1C74E;
+    width: fit-content;
+}
+.unpublished{
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #fff!important;
+    padding: 5px 10px;
+    background-color: #959595;
+    width: fit-content;
+}
+.lesson-state h2{
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+    color: #000;
+}
+.lesson-state h2 span{
+    font-family: "Noto Sans";
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+}
+.lesson-box a{
+    text-align: right;
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #51a6dc;
+}
+.page-mypage-lesson .main-body-notice{
+    text-align: right;
+ }
+
+/* mypage lesson add page */
+
+.sort{
+    display: flex;
+    width: 20%;
+}
+.sort-option{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.sort-field, .price-field{
+    align-items: center;
+}
+.sort-option input{
+    width: 10%;
+}
+.project-option{
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #f00;
+}
+.price-part{
+    display: flex;
+    align-items: flex-end;
+}
+.set{
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    margin-right: 5%;
+}
+.set p{
+    width: 35%;
+}
+.lesson-env, .lesson-env-input{
+    display: flex;
+    align-items: center;
+}
+.lesson-env>div{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.lesson-env input, .lesson-env-input input{
+    width: fit-content;
+}
+.env-field{
+    width: 80%;
+}
+.facility{
+    width: 86%!important;
+    margin-left: 5%;
+}
+#order{
+    width: 10%;
+    padding-left: 2%;
+    font-family: "FontAweSome";
+}
+.option-published{
+    color: #D1C74E;
+}
+.option-unpublished{
+    color: #959595;
+}
+
+select[data-chosen='published']{
+        color: #D1C74E;
+}
+
+
+
+
+
+
 
 
 

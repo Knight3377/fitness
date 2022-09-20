@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランディングページ</title>
+    <link href="https://fonts.google.com/noto/specimen/Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/safari-font.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_sp.css">
+</head>
+
+<body class="page-mypage-lesson-add mypage">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="assets/img/logo.svg"></a>
+            </div>
+            <div class="notice">
+                <div class="notice-bell">
+                    <img src="assets/img/bell.png">
+                    <p>10</p>
+                </div>
+                <div class="notice-message">
+                    <img src="assets/img/message.png">
+                    <p>10</p>
+                </div>
+            </div>
+            <div class="menu_btn">
+                <div class="container" onclick="openNav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <p class="sp-menu">MENU</p>
+                <p class="sp-menu-close">CLOSE</p>
+            </div>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <div class="sp-profile-header">
+                        <div class="avatar">
+                            <img src="assets/img/avatar.png">
+                        </div>
+                        <div class="avatar-content">
+                            <h3>ボディ太郎</h3>
+                            <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="sp-profile-menu">
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">レッスン管理<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">登録者情報<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">メッセージ<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">スケジュール<span>&#10148;</span></a>
+                        </div>
+                        <div class="profile-menu-item">
+                            <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                        </div>
+                    </div>
+                    <div class="sp-btn-header">
+                        <a href="contact.html">お問い合わせ</a>
+                    </div>
+                    <div class="sp-logout">
+                        <img src="assets/img/logout-sp.png">
+                        <p>ログアウト</p>
+                    </div>
+                    </div>
+                </div> 
+            <div class="mypage-contact-header">
+                <a href="contact.html">お問い合わせ</a>
+            </div>            
+        </div>
+        <div class="main">
+            <section class="left-side">
+                <div class="popup">
+                    <div class="popup-title">
+                        <img src="assets/img/bell-black.png">
+                        <h3>お知らせ</h3>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>メンテナンスのお知らせ</h5>
+                    </div>
+                    <div class="popup-content-item">
+                        <p>2021.12.16</p>
+                        <h5>「〇〇〇〇」に予約がありました</h5>
+                    </div>
+                </div>
+                <div class="profile-header">
+                    <div class="avatar">
+                        <img src="assets/img/avatar.png">
+                    </div>
+                    <div class="avatar-content">
+                        <h3>ボディ太郎</h3>
+                        <a href="#">プロフィール編集&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="profile-menu">
+                    <div class="profile-menu-item">
+                        <a href="#">マイページTOP<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <p>トレーナーメニュー</p>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">レッスン管理<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">登録者情報<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">メッセージ<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">スケジュール<span>&#10148;</span></a>
+                    </div>
+                    <div class="profile-menu-item">
+                        <a href="#">売上管理・振込申請<span>&#10148;</span></a>
+                    </div>
+                </div>
+                <div class="logout">
+                    <img src="assets/img/logout.png">
+                    <p>ログアウト</p>
+                </div>
+            </section>
+
+            <section class="main-body">
+                <div class="main-body-title">
+                    <h3>プロフィール管理</h3>
+                </div>
+                <div class="main-body-notice">
+                    <p class="userinfo-title">レッスンの新規作成</p>
+                    <div class="userinfo-input">
+                        <div class="userinfo-input-field">
+                            <p>タイトル</p>
+                            <input type="text" name="" placeholder="ボディ太郎">
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>説明文</p>
+                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder=""></textarea>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>トレーニング時の持ち物</p>
+                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder=""></textarea>
+                        </div>
+                        <div class="userinfo-input-field sort-field">
+                            <p>種類</p>
+                            <div class="sort">
+                                <div class="sort-option">
+                                  <input type="radio" id="単発" name="sort" value="単発">
+                                  <label for="単発">単発</label>
+                                </div>
+                                <div class="sort-option">
+                                  <input type="radio" id="セット" name="sort" value="セット">
+                                  <label for="セット">セット</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field price-field">
+                            <p><span class="project-option">(メモ：単発の場合)</span><br>価格</p>
+                            <div class="price-part">
+                                <input type="text" name=""><p>&nbsp;分</p>
+                                <input type="text" name=""><p>&nbsp;円</p>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field price-field">
+                            <p><span class="project-option">(メモ：セットの場合)</span><br>価格</p>
+                            <div class="price-part">
+                                <div class="set">
+                                    <input type="text" name=""><p>&nbsp;セット</p>
+                                </div><br class="sp">
+                                <input type="text" name=""><p>&nbsp;分</p>
+                                <input type="text" name=""><p>&nbsp;円</p>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>レッスン環境</p>
+                            <div class="env-field">
+                                <div class="lesson-env">
+                                    <div>
+                                        <input type="checkbox" id="check19" name="check19">
+                                        <label for="check19">自宅(対面)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="check20" name="check20">
+                                        <label for="check20">自宅(オンライン)</label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="lesson-env-input">
+                                    <input type="checkbox" id="check21" name="check21">
+                                    <label for="check21">ジムなど</label>
+                                    <input class="facility" type="text" name="" placeholder="ジムの施設名など　自由入力">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>注意事項</p>
+                            <textarea id="resume" name="resume" rows="5" cols="33" placeholder=""></textarea>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>写真<br><span>※最大5枚</span></p>
+                            <div class="photo">
+                                <div class="photo-add">
+                                    <!-- <p>ファイルをアップロード</p> -->
+                                    <input type="file" id="actual-btn1" hidden/>
+
+                                    <span id="file-chosen1">ファイルをアップロード</span>
+                                    <!-- our custom upload button -->
+                                    <label for="actual-btn1" class="btn-photo-add">写真を選択する</label>
+                                    <p class="del" id="resetbtn1" ><span>×</span>この質問を削除する</p>
+                                </div>
+                                <div class="photo-add">
+                                    <!-- <p>ファイルをアップロード</p> -->
+                                    <input type="file" id="actual-btn2" hidden/>
+
+                                    <span id="file-chosen2">ファイルをアップロード</span>
+                                    <!-- our custom upload button -->
+                                    <label for="actual-btn2" class="btn-photo-add">写真を選択する</label>
+                                    <p class="del" id="resetbtn2" ><span>×</span>この質問を削除する</p>
+                                </div>
+                                <div class="photo-add">
+                                    <!-- <p>ファイルをアップロード</p> -->
+                                    <input type="file" id="actual-btn3" hidden/>
+
+                                    <span id="file-chosen3">ファイルをアップロード</span>
+                                    <!-- our custom upload button -->
+                                    <label for="actual-btn3" class="btn-photo-add">写真を選択する</label>
+                                    <p class="del" id="resetbtn3" ><span>×</span>この質問を削除する</p>
+                                </div>
+                                <div class="photo-add">
+                                    <!-- <p>ファイルをアップロード</p> -->
+                                    <input type="file" id="actual-btn4" hidden/>
+
+                                    <span id="file-chosen4">ファイルをアップロード</span>
+                                    <!-- our custom upload button -->
+                                    <label for="actual-btn4" class="btn-photo-add">写真を選択する</label>
+                                    <p class="del" id="resetbtn4" ><span>×</span>この質問を削除する</p>
+                                </div>
+                                <div class="photo-add">
+                                    <!-- <p>ファイルをアップロード</p> -->
+                                    <input type="file" id="actual-btn5" hidden/>
+
+                                    <span id="file-chosen5">ファイルをアップロード</span>
+                                    <!-- our custom upload button -->
+                                    <label for="actual-btn5" class="btn-photo-add">写真を選択する</label>
+                                    <p class="del" id="resetbtn5" ><span>×</span>この質問を削除する</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-input-field">
+                            <p>動画<br><span>※Youtubeのみ</span></p>
+                            <input type="text" name="" placeholder="iframeから始まるURLをペーストしてください">
+                        </div>
+                        <div class="userinfo-input-field order-field">
+                            <p>受付設定</p>
+                            <select name="order" id="order">
+                                <!-- <optgroup -->
+                                >
+                                    <option value="published" class="option-published">&#xf111;&nbsp;&nbsp;公開中 </option>
+                                    <option value="unpublished" class="option-unpublished">&#xf111;&nbsp;&nbsp;非公開中</option>
+                                <!-- </optgroup> -->
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="userinfo-register">
+                        入力内容を登録
+                    </button>
+                </div>
+            </section>
+
+            <section class="works">
+                
+            </section>
+
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

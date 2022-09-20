@@ -967,7 +967,7 @@ optgroup{
 }
 .userinfo-register{
     font-size: 3vw;
-    margin: 6% 3% 0;
+    margin: 5% auto;
     padding: 4% 25%;
 }
 .userinfo-register:after {
@@ -1008,8 +1008,10 @@ optgroup{
     width: 70%;
 }
 textarea{
-    width: 100%;
+    width: 95%;
     height: 35vw;
+    padding-left: 5%;
+    text-indent: 0;
 }
 .target, .speciality{
     width: 100%;
@@ -1040,6 +1042,77 @@ textarea{
     margin-left: 6%;
     font-size: 2.8vw;
 }
+
+/* lesson management page */
+.btn-lesson-add{
+    display: none;
+}
+.lesson-box-inner{
+    display: block;
+}
+.lesson-content{
+    width: 94%;
+}
+.lesson-content h5{
+    font-size: 3.5vw;
+    line-height: 6vw;
+}
+.lesson-content p{
+    font-size: 3vw;
+    margin: 5% 0;
+}
+.lesson-state{
+    display: block;
+}
+p.published{
+    font-size: 3vw;
+}
+.lesson-state h2{
+    text-align: right;
+    font-size: 8vw;
+}
+.lesson-image{
+    width: 70%;
+    margin: 5% auto;
+    background-size: contain;
+}
+.lesson-box{
+    margin: 5% 0%;
+}
+.lesson-state h2 span{
+    font-size: 4vw;
+}
+.page-mypage-lesson .btn-fixed{
+    background-color: #D1C74E;
+    color: white;
+    border-top: 0;
+    justify-content: center;
+    height: 16vw;
+}
+.btn-lesson-add-fixed p{
+    font-size: 5vw;
+    padding: 13% 0;
+}
+.page-mypage-lesson .main{
+    padding: 5% 5% 10%;
+}
+
+/* mypage lesson add page */
+
+.sort{
+    width: 80%;
+}
+.sort-option input{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1542,6 +1615,26 @@ textarea{
 
 
 /* mypage profile  */
+
+#year{
+    width: 14vw;
+}
+#month, #day{
+    width: 7vw;
+}
+
+/* lesson management page */
+.btn-lesson-add p{
+    width: 16vw;
+}
+
+
+
+
+
+
+
+
 
 
 
