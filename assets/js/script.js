@@ -78,27 +78,7 @@ function openPage(pageName, elmnt) {
 
 // document.getElementById("defaultOpen").click();
 
-$(".restaurant_introduction_grid_content .grid_item a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 300, function() {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    } // End if
-});
 $(".header_content li a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -129,22 +109,7 @@ var btn1 = document.getElementById("check_btn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-// btn1.onclick = function() {
-//     modal.style.display = "block";
-// }
 
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//     modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// }
 var j = 1;
 
 
@@ -240,6 +205,36 @@ $(document).ready(function() {
         $(this).css('background-color', 'white');
         $(this).find('a').css('color', '#d1c74e');
     });
+
+    //modals part
+
+    jQuery(".tb-next").click(function () {
+        let cur = $(this).closest("#tabArea").find(".tab-pan.active");
+        if (jQuery(cur).next().length > 0) {
+          $(".tb-prev").removeClass("hide");
+          jQuery(".tab-pan").removeClass("active");
+          jQuery(cur).next().addClass("active");
+        }
+        if (jQuery(cur).next().next().length == 0) {
+          $(".tb-next").addClass("hide");
+          $(".submitbtn").removeClass("hide");
+        }
+      });
+
+      $(".tb-prev").click(function () {
+        let cur = $(this).closest("#tabArea").find(".tab-pan.active");
+        if (jQuery(cur).prev().length > 0) {
+          $(".submitbtn").addClass("hide");
+          $(".tb-next").removeClass("hide");
+          jQuery(".tab-pan").removeClass("active");
+          jQuery(cur).prev().addClass("active");
+        }
+        if (jQuery(cur).prev().prev().length == 0) {
+          $(".tb-prev").addClass("hide");
+        }
+      });
+
+
 });
 
 //file upload

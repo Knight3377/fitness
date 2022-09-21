@@ -181,12 +181,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                         </div>
                         <div class="userinfo-input-field price-field">
                             <p><span class="project-option">(メモ：セットの場合)</span><br>価格</p>
-                            <div class="price-part">
+                            <div class="price-part-set">
                                 <div class="set">
                                     <input type="text" name=""><p>&nbsp;セット</p>
-                                </div><br class="sp">
-                                <input type="text" name=""><p>&nbsp;分</p>
-                                <input type="text" name=""><p>&nbsp;円</p>
+                                </div>
+                                <div class="set">
+                                    <input type="text" name=""><p>&nbsp;分</p>
+                                    <input type="text" name=""><p>&nbsp;円</p>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="userinfo-input-field">
@@ -204,8 +207,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 </div>
                                 <br>
                                 <div class="lesson-env-input">
-                                    <input type="checkbox" id="check21" name="check21">
-                                    <label for="check21">ジムなど</label>
+                                    <div class="gym">
+                                        <input type="checkbox" id="check21" name="check21">
+                                        <label for="check21">ジムなど</label>
+                                    </div>
                                     <input class="facility" type="text" name="" placeholder="ジムの施設名など　自由入力">
                                 </div>
                             </div>
@@ -274,7 +279,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                                 <!-- <optgroup -->
                                 >
                                     <option value="published" class="option-published">&#xf111;&nbsp;&nbsp;公開中 </option>
+                                    <!-- <option value="published" class="option-published"><span>&#xf00c;</span>&nbsp;&nbsp;公開中 </option> -->
                                     <option value="unpublished" class="option-unpublished">&#xf111;&nbsp;&nbsp;非公開中</option>
+                                    <!-- <option value="unpublished" class="option-unpublished">&#xf00c;&nbsp;&nbsp;非公開中</option> -->
                                 <!-- </optgroup> -->
                             </select>
                         </div>

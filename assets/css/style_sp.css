@@ -1100,16 +1100,53 @@ p.published{
 /* mypage lesson add page */
 
 .sort{
-    width: 80%;
+    width: 40%;
 }
 .sort-option input{
-    width: 20%;
+    width: 10%;
 }
-
-
-
-
-
+.order-field{
+    display: none;
+}
+.project-option{
+    display: none;
+}
+.price-part-set{
+    display: block;
+}
+.price-part-set .set:first-child input{
+    width: 40%;
+}
+.env-field{
+    width: 100%;
+}
+.lesson-env>div{
+    width: 100%;
+}
+.lesson-env>div input{
+    width: 10%;
+}
+.set{
+    margin: 3% 0;
+}
+.photo-add span{
+    font-size: 3vw;
+    width: 50%;
+}
+.facility{
+    width: 100%!important;
+    margin-left: 0;
+}
+.lesson-env-input{
+    display: block;
+}
+.gym input{
+    width: fit-content;
+    margin-left: 2%;
+}
+.gym label{
+    margin-left: 2%;
+}
 
 
 
@@ -1628,9 +1665,17 @@ p.published{
     width: 16vw;
 }
 
+/* mypage lesson add page */
 
-
-
+.order-field{
+    display: none;
+}
+.lesson-env-input label{
+    width: 75px;
+}
+.lesson-env>div:last-child{
+    width: 155px;
+}
 
 
 

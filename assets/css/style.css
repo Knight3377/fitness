@@ -1887,24 +1887,26 @@ select:-moz-focusring {
     align-items: center;
 }
 .published{
-    font-family: "Noto Sans";
+    font-family: 'FontAwesome';
     font-weight: normal;
     font-size: 14px;
     text-align: left;
-    color: #fff!important;
+    color: #D1C74E;
     padding: 5px 10px;
-    background-color: #D1C74E;
+    /*background-color: #D1C74E;*/
     width: fit-content;
+    font-style: normal;
 }
-.unpublished{
-    font-family: "Noto Sans";
+.option-unpublished{
+    font-family: 'FontAwesome';
     font-weight: normal;
     font-size: 14px;
     text-align: left;
-    color: #fff!important;
+    color: #959595;
     padding: 5px 10px;
-    background-color: #959595;
+    /*background-color: #959595;*/
     width: fit-content;
+    font-style: normal;
 }
 .lesson-state h2{
     font-family: "Noto Sans";
@@ -1960,11 +1962,13 @@ select:-moz-focusring {
     display: flex;
     align-items: flex-end;
 }
+.price-part-set{
+    display: flex;
+    align-items: flex-end;
+}
 .set{
     display: flex;
     align-items: flex-end;
-    width: 80%;
-    margin-right: 5%;
 }
 .set p{
     width: 35%;
@@ -1984,12 +1988,15 @@ select:-moz-focusring {
 .env-field{
     width: 80%;
 }
+.gym{
+    display: flex;
+}
 .facility{
     width: 86%!important;
     margin-left: 5%;
 }
 #order{
-    width: 10%;
+    width: 120px;
     padding-left: 2%;
     font-family: "FontAweSome";
 }
@@ -2000,10 +2007,147 @@ select:-moz-focusring {
     color: #959595;
 }
 
-select[data-chosen='published']{
-        color: #D1C74E;
+
+/* mypage modals */
+.main-wrap{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.form-container {
+  height: auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
 }
 
+.form-container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.form-card {
+    display: flex;
+    position: absolute;
+    width: 850px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.form-card-left {
+    width: 200px;
+    background: rgba(229, 241, 255, 0.2);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-header {
+    font-size: 30px;
+    color: rgba(0,0,0,.8);
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 7px;
+}
+.form-card-left p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.form-body {
+    padding: 5%;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.tab-pan {
+  display: none;
+}
+.tab-pan.active {
+  display: block;
+}
+.tab-pan h2{
+    color: #D1C74E;
+    font-size: 36px;
+}
+.tab-pan h6{
+    font-size: 20px;
+}
+.tab-pan img{
+    margin: 3% 0 3%;
+    height: 200px;
+}
+.tab-pan a{
+    font-size: 18px;
+    color: black;
+}
+.tab-pan p{
+    margin: 3% 0;
+    text-align: left;
+    padding: 0 15%;
+}
+.notice-circle i{
+    font-size: 14px;
+    margin: 0 3px;
+    color: #9D9D9D;
+}
+.hide {
+  display: none;
+}
+.tab-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+    text-align: right;
+    box-sizing: border-box;
+}
+.tb-next, .tb-prev {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-size: 18px;
+    padding: 2% 20%;
+    color: white;
+    background-color: #D1C74E;
+    margin: 1% 0;
+}
+.tb-end{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-size: 18px;
+    padding: 2% 20%;
+    color: white;
+    background-color: #D1804E;
+    margin: 1% 0;
+}
 
 
 
