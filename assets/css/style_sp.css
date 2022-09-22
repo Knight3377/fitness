@@ -374,10 +374,7 @@ p.slide{
 }
 
 /* policy page */
-.page-policy .header{
-    display: block;
-    padding: 10%;
-}
+
 .page-policy .header .btn-header{
     display: none;
 }
@@ -392,9 +389,13 @@ p.slide{
 }
 
 /* terms page */
-.page-terms .header{
+.logo img{
+    height: auto;
+}
+.page-terms .header, .page-policy .header, .page-company .header{
     display: block;
-    padding: 10%;
+    padding: 4% 8% 4% 5%;
+    text-align: left;
 }
  .page-terms .header .btn-header{
     display: none;
@@ -412,10 +413,6 @@ p.slide{
 
 
 /* company page */
-.page-company .header{
-    display: block;
-    padding: 10%;
-}
  .page-company .header .btn-header{
     display: none;
 }
@@ -441,11 +438,29 @@ p.slide{
 }
 
 /* register page */
-.page-register{
+
+.page-register .header{
+    display: block;
+    padding: 10%;
+}
+.page-register .header .btn-header{
+    display: none;
+}
+.page-register .logo img{
+    height: 7vw;
+}
+.login-main{
+    padding: 5%;
+}
+.page-register .register-popup{
     padding: 5%;
 }
 .page-register .select-box p{
     font-size: 3.5vw;
+}
+
+.page-register .select-box p{
+    font-size: 3.3vw;
 }
 .select-box{
     padding: 5%;
@@ -509,7 +524,7 @@ p.slide{
     padding: 5%;
 }
 .page-login-main .select-box p{
-    font-size: 3.5vw;
+    font-size: 3.3vw;
 }
 
 /* mail register temp page */
@@ -1396,8 +1411,21 @@ p.published{
     width: 25%;
 }
 
+.page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer{
+    position: absolute;
+    background: #313131;
+    color: #fff;
+    list-style: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-
+.login-main{
+    padding: 30% 20%;
+}
 
 /* Mypage Top */
 
@@ -1676,8 +1704,12 @@ p.published{
 .lesson-env>div:last-child{
     width: 155px;
 }
-
-
+.pwd_reset_complete{
+    padding: 20%;
+}
+.email_register{
+    padding: 20%;
+}
 
 
 

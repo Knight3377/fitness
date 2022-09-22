@@ -234,7 +234,18 @@ $(document).ready(function() {
         }
       });
 
-
+    //mail register button event
+    $("#policy_check").click(function() {
+        if (this.checked) {
+             $('.mail-register').css('background-color', '#D1C74E');
+             $('.mail-register').css('box-shadow', '0px 4px 0px #8d8422'); 
+             $('.mail-register').removeAttr('disabled'); 
+        } else {
+            $('.mail-register').css('background-color', '#9D9D9D');
+            $('.mail-register').css('box-shadow', '0px 4px 0px #313131');  
+        }
+    });
+   
 });
 
 //file upload
@@ -287,3 +298,7 @@ $select.each(function() {
 }).on('change', function(ev) {
     $(this).attr('class', '').addClass($(this).children(':selected').val());
 });
+
+
+
+

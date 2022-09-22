@@ -16,11 +16,11 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <a href="#"><img src="assets/img/logo.svg"></a>
+                <a href="index.html"><img src="assets/img/logo.svg"></a>
             </div>
             <div class="btn-header">
-                <!-- <a href="#" class="btn-register"><button class="register">無料事前登録はこちら</button></a>
-                <a href="#" class="btn-login"><button class="login"><img src="assets/img/login.png">ログイン</button></a> -->
+                <!-- <a href="register.html" class="btn-register"><button class="register">無料事前登録はこちら</button></a>
+                <a href="login_main.html" class="btn-login"><button class="login"><img src="assets/img/login.png">ログイン</button></a> -->
             </div>
         </div>
 
@@ -32,17 +32,20 @@
                 <p>パスワード</p>
                 <input type="password">
                 <h6>※7文字以上の半角英数字</h6>
-                <p class="check"><input type="checkbox" name=""><a href="terms.html">利用規約、</a><a href="policy.html">プライバシーポリシー</a>に同意する</p>
-                <a href="#"><button class="mail-register">送信</button></a>
+                <p class="check">
+                    <input type="checkbox" id="policy_check">
+                    <a href="terms.html">利用規約、</a>
+                    <a href="policy.html">プライバシーポリシー</a>に同意する</p>
+                <a href="#"><button class="mail-register" disabled>送信</button></a>
                 <p>このサイトはreCAPTCHAで保護されております</p>
             </div>
         </div>
 
         <div class="footer footer-login">
             <div class="footer-menu">
-                <a href="#">プライバシーポリシー</a>
-                <a href="#">利用規約</a>
-                <a href="#">運営会社情報</a>
+                <a href="policy.html">プライバシーポリシー</a>
+                <a href="terms.html">利用規約</a>
+                <a href="company.html">運営会社情報</a>
             </div>
             <div class="copyright">      
                 <p>©Bodymakers</p>             
@@ -50,6 +53,9 @@
         </div>
 
     </div>
+
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
