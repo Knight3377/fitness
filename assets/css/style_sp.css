@@ -1411,7 +1411,7 @@ p.published{
     width: 25%;
 }
 
-.page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer{
+.page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer, .page-mail-login .footer{
     position: absolute;
     background: #313131;
     color: #fff;
@@ -1710,8 +1710,12 @@ p.published{
 .email_register{
     padding: 20%;
 }
-
-
+.pwd p{
+    width: 20vw;
+}
+.page-terms .btn-header .btn-register button{
+    padding: 20px 50px;
+}
 
 
 

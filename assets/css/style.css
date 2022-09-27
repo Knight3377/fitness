@@ -57,7 +57,9 @@ a:hover, a:visited, a:active{
 .main{
 
 }
-
+.page-login-main .container, .page-mail-login .container, .page-email-register .container, .page-email-register-temp .container{
+    position: relative;
+}
 
 /*  header  */
 .header{
@@ -336,6 +338,7 @@ a.top-register button:hover{
     background-size: 100% 100%;
     padding: 18% 5% 5% 5%;
     margin-top: -15%;
+    background-color: black;
 }
 .line{
     height: 1px;
@@ -478,6 +481,7 @@ a.top-register button:hover{
     background: url(../img/price-bk.png) no-repeat;
     background-size: 100% 100%;
     padding: 18% 5% 15% 5%;
+    background-color: black;
 }
 .price-content{
     max-width: 850px;
