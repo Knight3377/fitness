@@ -102,7 +102,7 @@ a{
 }
 .intro-content p{
     padding: 5% 0;
-    font-size: 4vw;
+    font-size: 3.8vw;
 }
 
 /* character */
@@ -1682,10 +1682,10 @@ p.published{
 /* mypage profile  */
 
 #year{
-    width: 14vw;
+    width: 12vw;
 }
 #month, #day{
-    width: 7vw;
+    width: 9vw;
 }
 
 /* lesson management page */
