@@ -563,7 +563,7 @@ p.slide{
     font-size: 7vw;
 }
 .email_login{
-    padding: 10% 5% 20%;
+    padding: 10vh 5% 21vh;
 }
 .email_login h2{
     font-size: 7vw;
@@ -669,7 +669,7 @@ p.slide{
     padding: 5%;
 }
 .pwd-reset-box{
-    padding: 10% 5% 35%;
+    padding: 20vh 5% 33vh;
 }
 .pwd-reset-inner h6{
     font-size: 2.5vw;
@@ -697,7 +697,7 @@ p.slide{
     font-size: 3.5vw;
 }
 .pwd_reset_complete{
-    padding: 10% 5% 20%;
+    padding: 20vh 5% 33vh;
 }
 .pwd_reset_complete h2{
     font-size: 7vw;
@@ -911,13 +911,14 @@ p.slide{
     width: 68vw;
     height: 70vw;
     box-shadow: 1px 1px 7px 1px grey;
+    z-index: 10;
 }
 .popup::before{
-    border-right: 5vw solid transparent;
-    border-bottom: 10vw solid white;
-    border-left: 5vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 8vw solid white;
+    border-left: 4vw solid transparent;
     top: -5vw;
-    right: 15vw;
+    right: 12vw;
     content: '';
     position: absolute;
 }
@@ -949,7 +950,7 @@ p.slide{
 
 /* Mypage Userinfo */
 label{
-    font-size: 4vw;
+    font-size: 4vw!important;
 }
 input::placeholder, select::placeholder, textarea::placeholder{
     font-size: 3.5vw;
@@ -957,14 +958,23 @@ input::placeholder, select::placeholder, textarea::placeholder{
 optgroup{
     font-size: 3.5vw;
 }
+#order{
+    width: 28vw;
+    font-size: 3vw;
+    background-position: calc(100% - 20px) calc(30px + -1vw), calc(100% - 15px) calc(30px + -1vw), calc(100% - 2.5em) 0.5em;
+}
+.option-unpublished{
+    font-size: 3vw;
+}
 .page-mypage-userinfo .left-side{
     display: none;
 }
 .userinfo-input-field {
     display: block;
+    text-align: left;
 }
 .userinfo-input-field p{
-    margin: 3% 0;
+    padding: 5% 0 8%;
     width: auto;
 }
 .userinfo-input-field input {
@@ -983,7 +993,6 @@ optgroup{
 .userinfo-register{
     font-size: 3vw;
     margin: 5% auto;
-    padding: 4% 25%;
 }
 .userinfo-register:after {
     margin-top: -3%;
@@ -1115,14 +1124,12 @@ p.published{
 /* mypage lesson add page */
 
 .sort{
-    width: 40%;
+    width: 40vw;
 }
 .sort-option input{
     width: 10%;
 }
-.order-field{
-    display: none;
-}
+
 .project-option{
     display: none;
 }
@@ -1139,7 +1146,8 @@ p.published{
     width: 100%;
 }
 .lesson-env>div input{
-    width: 10%;
+    width: fit-content;
+    margin-left: 2%;
 }
 .set{
     margin: 3% 0;
@@ -1155,6 +1163,9 @@ p.published{
 .lesson-env-input{
     display: block;
 }
+.gym{
+    width: 100%;
+}
 .gym input{
     width: fit-content;
     margin-left: 2%;
@@ -1162,14 +1173,38 @@ p.published{
 .gym label{
     margin-left: 2%;
 }
-
-
-
-
-
-
-
-
+.form-card{
+    width: 80%;
+}
+.tab-pan h2{
+    font-size: 6vw;
+}
+.tab-pan h3{
+    font-size: 5vw;
+}
+.tab-pan h6{
+    font-size: 4vw;
+}
+.tab-pan img{
+    margin: 5% 0;
+    height: 32vw;
+}
+.tab-pan:nth-child(5n-2) img{
+    margin: 5% 0;
+    height: 27vw;
+}
+.notice-circle i{
+    font-size: 3vw;
+}
+.tab-pan p{
+    padding: 0;
+}
+.tb-next, .tb-prev{
+    font-size: 4vw;
+}
+.tb-end{
+    font-size: 4vw;
+}
 
 
 
@@ -1424,7 +1459,7 @@ p.published{
 }
 
 .login-main{
-    padding: 30% 20%;
+    padding: 10vh 20% 32vh;
 }
 
 /* Mypage Top */
@@ -1629,13 +1664,14 @@ p.published{
     width: 68vw;
     height: 70vw;
     box-shadow: 1px 1px 7px 1px grey;
+    z-index: 10;
 }
 .popup::before{
-    border-right: 5vw solid transparent;
-    border-bottom: 10vw solid white;
-    border-left: 5vw solid transparent;
-    top: -5vw;
-    right: 15vw;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid white;
+    border-left: 40px solid transparent;
+    top: -2vw;
+    right: 1%;
     content: '';
     position: absolute;
 }
@@ -1695,9 +1731,6 @@ p.published{
 
 /* mypage lesson add page */
 
-.order-field{
-    display: none;
-}
 .lesson-env-input label{
     width: 75px;
 }
@@ -1708,7 +1741,7 @@ p.published{
     padding: 20%;
 }
 .email_register{
-    padding: 20%;
+    padding: 20vh 20% 33vh;
 }
 .pwd p{
     width: 20vw;
@@ -1716,9 +1749,45 @@ p.published{
 .page-terms .btn-header .btn-register button{
     padding: 20px 50px;
 }
+.form-card{
+    width: 65%;
+}
+.tab-pan h2{
+    font-size: 36px;
+}
+.tab-pan h3{
+    font-size: 30px;
+}
+.tab-pan h6{
+    font-size: 20px;
+}
+.tab-pan img{
+    margin: 5% 0;
+    height: 15vw;
+}
+.tab-pan:nth-child(5n-2) img{
+    margin: 5% 0;
+    height: auto;
+}
+.notice-circle i{
+    font-size: 14px;
+}
+.tab-pan p{
+    padding: 0;
+}
+.tb-next, .tb-prev{
+    font-size: 14px;
+}
+.tb-end{
+    font-size: 14px;
+}
 
-
-
+.email_login{
+    padding: 10vh 32% 32vh 32%;
+}
+.email_register{
+    padding: 10vh 32% 32vh 32%;
+}
 
 
 

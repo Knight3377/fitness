@@ -198,10 +198,11 @@ $(document).ready(function() {
         }
     });
 
-    $('.profile-menu .profile-menu-item').hover(function() {
+    $('.profile-menu .profile-menu-item').mouseenter(function() {
         $(this).css('background-color', '#D1C74E');
         $(this).find('a').css('color', 'white');
-    }, function(){
+    });
+    $('.profile-menu .profile-menu-item').mouseleave(function() {
         $(this).css('background-color', 'white');
         $(this).find('a').css('color', '#d1c74e');
     });
@@ -299,6 +300,9 @@ $select.each(function() {
     $(this).attr('class', '').addClass($(this).children(':selected').val());
 });
 
-
+$('.userinfo-register').click(function(){
+    $('.lesson-add-complete-notice').show();
+    $('.page-mypage-lesson-add .container').css('position', 'relative');
+});
 
 
