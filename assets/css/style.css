@@ -186,14 +186,14 @@ a.btn-login button:hover{
     width: 13%;
 }
 .contact-caption h2{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: 900;
     font-size: 42px;
     text-align: center;
     color: #000;
 }
 .free-register{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     width: 450px;
     font-size: 20px;
     background-color: #FF6D1F;
@@ -745,14 +745,14 @@ html {
     padding: 1% 17% 10%;
 }
 .policy-content h4{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: 900;
     font-size: 32px;
     text-align: center;
     color: #fff;
 }
 .policy-content p{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
@@ -792,14 +792,14 @@ html {
     padding: 1% 17% 10%;
 }
 .company-content h4{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: 900;
     font-size: 32px;
     text-align: center;
     color: #fff;
 }
 .company-content p{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
@@ -1970,7 +1970,7 @@ select:-moz-focusring {
     align-items: center;
 }
 .published{
-    font-family: mincho, serif;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
     font-weight: normal;
     font-size: 14px;
     text-align: left;
