@@ -198,15 +198,30 @@ $(document).ready(function() {
         }
     });
 
-    $('.profile-menu .profile-menu-item').mouseenter(function() {
+
+    $('.profile-menu .profile-menu-item').hover(function() {
         $(this).css('background-color', '#D1C74E');
         $(this).find('a').css('color', 'white');
-    });
-    $('.profile-menu .profile-menu-item').mouseleave(function() {
+    }, function() {
         $(this).css('background-color', 'white');
-        $(this).find('a').css('color', '#d1c74e');
+        $(this).find('a').css('color', 'black');
     });
 
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#picture').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#fileinput").change(function () {
+        readURL(this);
+    });
     //modals part
 
     jQuery(".tb-next").click(function () {
@@ -233,6 +248,12 @@ $(document).ready(function() {
         if (jQuery(cur).prev().prev().length == 0) {
           $(".tb-prev").addClass("hide");
         }
+      });
+
+      $('.notice-circle i').click(function(){
+        index = $(this).attr('attr');
+        jQuery(".tab-pan").removeClass("active");
+        $(".tab-pan:nth-child(" + index + ")").addClass("active");
       });
 
     //mail register button event

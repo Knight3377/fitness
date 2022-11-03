@@ -77,6 +77,7 @@ a:hover, a:visited, a:active{
 }
 .page-login-main .container, .page-mail-login .container, .page-email-register .container, .page-email-register-temp .container{
     position: relative;
+    height: 100%;
 }
 
 /*  header  */
@@ -840,7 +841,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4% 10%;
+    /*padding: 4% 10%;*/
     border-radius: 5px;
     border: 1px solid #C3C3C3;
     margin: 10px 0;
@@ -850,6 +851,7 @@ html {
     justify-content: center;
     align-items: center;
     color: black;
+    padding: 4% 22%;
 }
 .select-box img{
     width: 10%;
@@ -860,6 +862,13 @@ html {
     padding: 5%;
     margin: 5% -5% 0;
 }
+.page-register .select-box a{
+    padding: 4% 22%;
+}
+.page-login-main .select-box a{
+    padding: 4% 18%;
+}
+
 
 
 /* mail register page */
@@ -951,9 +960,7 @@ input[type="checkbox"]{
 }
 
 /* login main page */
-.page-login-main .header{
-    padding: 1% 4%;
-}
+
 .login-main{
     padding: 10vh 32% 18vh;
     background-color: #151515;
@@ -1339,7 +1346,7 @@ input[type="checkbox"]{
 .overlay a p{
     font-family: "Noto Sans JP";
     font-weight: bold;
-    font-size: 4vw;
+    font-size: 3.5vw;
     letter-spacing: 0.02em;
     line-height: 7vw;
     text-align: left;
@@ -1419,6 +1426,11 @@ input[type="checkbox"]{
     align-items: center;
     margin-bottom: 10%;
 }
+.avatar #picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 .avatar{
     margin-right: 5%;
     display: flex;
@@ -1446,7 +1458,7 @@ input[type="checkbox"]{
     align-items: center;
     font-weight: 500;
     font-size: 16px;
-    line-height: 42px;
+    line-height: 32px;
     text-align: left;
     color: #454545;
     padding: 2% 5%;
@@ -1459,6 +1471,7 @@ input[type="checkbox"]{
 .profile-menu-item:nth-child(7n-5){
     border-bottom: 1px solid #D1C74E;
     margin: 3% 2% 7%;  
+    background-color: white!important;
 }
 .profile-menu-item:nth-child(7n-5) p{
     font-size: 16px!important;
@@ -1600,7 +1613,7 @@ input[type="checkbox"]{
     font-size: 15px;
 }
 .works-body button{
-    background-color: #C4C4C4;
+    background-color: #99C043;
     padding: 10px 30px;
     border-radius: 5px;
     border: none;
@@ -1610,14 +1623,86 @@ input[type="checkbox"]{
 .works-body button a{
     color: white;
 }
-.notice{
-    display: none;
-}
 .popup{
     display: none;
 }
+.notice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -73%;
+}
+.notice-bell, .notice-message{
+    position: relative;
+    padding: 0 25%;
+    display: flex;
+}
 
-
+.notice-bell p{
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    background-color: #D3BB0D;
+    border-radius: 10vw;
+    padding: 1% 7%;
+    top: -40%;
+    left: 60%;
+}
+.notice-message p{
+    color: white;
+    position: absolute;
+    font-size: 10px ;
+    background-color: #D3BB0D;
+    border-radius: 10vw;
+    padding: 1% 7%;
+    top: -55%;
+    left: 60%;
+}
+.popup{
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5%;
+    left: 403%;
+    top: -4%;
+    width: 320px;
+    height: 324px;
+    box-shadow: 1px 1px 7px 1px grey;
+    z-index: 10;
+}
+.popup::before{
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    top: -15px;
+    right: 25%;
+    content: '';
+    position: absolute;
+}
+.popup-title{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin: 0 -5%;
+    padding: 0 5% 2%;
+}
+.popup-title h3{
+    font-size: 18px;
+    margin-left: 3%;
+}
+.popup-content-item{
+    border-bottom: 1px solid grey;
+    padding: 5%;
+    margin: 0 -5%;
+}
+.popup-content-item p{
+    font-size: 12px;
+    text-align: left;
+}
+.popup-content-item h5{
+    font-size: 14px;
+    text-align: left;
+}
 /* Mypage User info  */
 .userinfo-title{
     padding: 2% 0;
@@ -1672,6 +1757,9 @@ input[type="checkbox"]{
     background-size: 10px 10px, 10px 10px;
     background-repeat: no-repeat;
 }
+.userinfo-register:hover{
+    background-color: #6E9025;
+}
 .register-complete-notice{
     position: absolute;
     background-color: #F4EFCB;
@@ -1704,7 +1792,7 @@ input[type=checkbox]:checked::after {
     display: block;
     position: absolute;
     left: -18px;
-    top: 0px;
+    top:-3px;
 }
 input[type=radio]:checked:before{
   background:gold;
@@ -1762,6 +1850,7 @@ textarea{
     background-color: #F0F0F0;
     border-radius: 5px;
     border: none;
+    line-height: 26px;
 }
 .target, .speciality{
     display: flex;
@@ -1791,8 +1880,9 @@ textarea{
 .userinfo-input label{
     font-size: 14px;
 }
-.userinfo-input input, .userinfo-input select{
+.userinfo-input input, .userinfo-input select, .userinfo-input textarea{
     font-size: 14px;
+    font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 }
 #ques, #ans{
     margin-left: 2%;
@@ -1908,6 +1998,9 @@ select:-moz-focusring {
     border: none;
     margin: 1%;
 }
+.btn-lesson-add:hover{
+    background-color: black;
+}
 .btn-lesson-add p{
     font-size: 16px;
     color: white;
@@ -1916,6 +2009,7 @@ select:-moz-focusring {
     align-items: center;
     width: 10vw;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 .btn-lesson-add span{
     /*margin-left: 15%;*/
@@ -1974,7 +2068,7 @@ select:-moz-focusring {
     font-weight: normal;
     font-size: 14px;
     text-align: left;
-    color: #D1C74E;
+    /*color: #D1C74E;*/
     padding: 5px 10px;
     /*background-color: #D1C74E;*/
     width: fit-content;
@@ -2097,9 +2191,7 @@ select:-moz-focusring {
     padding-left: 2%;
     /*font-family: "FontAweSome";*/
 }
-.option-published{
-    color: #D1C74E;
-}
+
 .option-unpublished{
     color: #959595;
 }
