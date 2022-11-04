@@ -849,9 +849,7 @@ p.slide{
     color: white;
     font-size: 4vw;
 }
-.mypage-contact-header{
-    display: none;
-}
+
 .avatar #picture{
     width: 100px;
     height: 100px;
@@ -870,7 +868,7 @@ p.slide{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: -10%;
+    margin: 0;
 }
 .notice-bell, .notice-message{
     position: relative;
@@ -907,14 +905,14 @@ p.slide{
     font-size: 3vw;
 }
 .popup{
-    position: absolute;
+position: absolute;
     background-color: white;
     border-radius: 8px;
-    padding: 5%;
-    left: 13.5%;
-    top: -10%;
+    padding: 50%;
+    left: -56vw;
+    top: 9vw;
     width: 68vw;
-    height: 70vw;
+    height: 67vw;
     box-shadow: 1px 1px 7px 1px grey;
     z-index: 10;
 }
@@ -922,7 +920,7 @@ p.slide{
     border-right: 4vw solid transparent;
     border-bottom: 8vw solid white;
     border-left: 4vw solid transparent;
-    top: -5vw;
+    top: -3vw;
     right: 12vw;
     content: '';
     position: absolute;
@@ -1007,6 +1005,69 @@ optgroup{
     margin-top: -3%;
     font-size: 5vw;
 }
+
+
+/* Mypage Inquiry */
+
+.page-mypage-inquiry .profile-header, .page-mypage-inquiry .profile-menu, .page-mypage-inquiry .logout{
+    display: none;
+}
+.inquiry-input-field {
+    display: block;
+    text-align: left;
+    padding: 5% 0;
+}
+.inquiry-input-field p{
+    padding: 2% 1% 2%;
+    width: auto;
+}
+.inquiry-line{
+    width: 100%;
+}
+.inquiry-title{
+    font-size: 4vw!important;
+}
+.inquiry-input input, .inquiry-input textarea{
+    font-size: 4vw;
+}
+.inquiry-input-field input {
+    width: 85%;
+}
+.inquiry-input-field textarea {
+    width: 80%;
+}
+.inquiry-notice{
+    line-height: 6vw;
+    margin: 10% 0;
+}
+
+.inquiry-register{
+    font-size: 3vw;
+    margin: 5% auto;
+    width: 60vw;
+}
+.inquiry-register:after {
+    margin-top: -3%;
+    font-size: 5vw;
+}
+
+.page-mypage-inquiry-complete .profile-header, .page-mypage-inquiry .profile-header{
+    display: none;
+}
+.page-mypage-inquiry-complete .left-side, .page-mypage-inquiry .left-side{
+    padding: 0;
+    margin-bottom: -5%;
+}
+.inquiry-complete-caption{
+    text-align: left;
+    font-size: 5vw;
+}
+.inquiry-complete-notice{
+    line-height: 7vw!important;
+}
+
+
+
 
 /* mypage profile  */
 .age-field{
@@ -1218,15 +1279,9 @@ p.published{
     font-size: 4vw;
 }
 
-/*.page-login-main .container, .page-mail-login .container, .page-email-register .container, .page-email-register-temp .container {
-    position: relative;
-    height: auto;
+.overlay a p{
+    font-size: 3vw;
 }
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: -webkit-fill-available;
-}*/
 
 
 
@@ -1469,7 +1524,7 @@ p.published{
     height: 100%;
 }
 .page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer, .page-mail-login .footer{
-    position: absolute;
+    /*position: absolute;*/
     background: #313131;
     color: #fff;
     list-style: none;
@@ -1503,9 +1558,7 @@ p.published{
 .mypage-contact-header a{
     display: none;
 }
-.mypage-contact-header{
-    display: none;
-}
+
 .mypage .main{
     display: block;
     padding: 20px;
@@ -1625,7 +1678,7 @@ p.published{
     color: white;
     font-size: 16px;
 }
-.mypage-contact-header{
+.inquiry{
     display: none;
 }
 .sp-profile-header .avatar{
@@ -1646,7 +1699,7 @@ p.published{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 0;
+    margin-left: 0%;
 }
 .notice-bell, .notice-message{
     position: relative;
@@ -1681,20 +1734,20 @@ p.published{
     position: absolute;
     background-color: white;
     border-radius: 8px;
-    padding: 5%;
-    left: 57.5%;
-    top: -10%;
-    width: 25vw;
-    height: 22vw;
+    padding: 20px;
+    left: -292px;
+    top: 50px;
+    width: 320px;
+    height: 310px;
     box-shadow: 1px 1px 7px 1px grey;
     z-index: 10;
 }
 .popup::before{
-    border-right: 40px solid transparent;
-    border-bottom: 80px solid white;
-    border-left: 40px solid transparent;
-    top: -2vw;
-    right: 1%;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid white;
+    border-left: 20px solid transparent;
+    top: -20px;
+    right: 8%;
     content: '';
     position: absolute;
 }
@@ -1702,7 +1755,7 @@ p.published{
     display: flex;
     align-items: center;
     border-bottom: 1px solid grey;
-    margin: 0 -19%;
+    margin: 0 -6%;
     padding: 0 5% 2%;
 }
 .popup-title h3{
@@ -1712,7 +1765,7 @@ p.published{
 .popup-content-item{
     border-bottom: 1px solid grey;
     padding: 5%;
-    margin: 0 -19%;
+    margin: 0 -6%;
 }
 .popup-content-item p{
     font-size: 12px;
@@ -1812,7 +1865,10 @@ p.published{
     padding: 10vh 24% 32vh 24%;
 }
 
-
+.sp-logout{
+    display: flex;
+    align-items: center;
+}
 
 
 
