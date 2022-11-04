@@ -390,7 +390,7 @@ p.slide{
 
 /* terms page */
 .logo img{
-    height: auto;
+    /*height: auto;*/
 }
 .page-terms .header, .page-policy .header, .page-company .header{
     display: block;
