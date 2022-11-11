@@ -769,14 +769,12 @@ html {
     padding: 1% 17% 10%;
 }
 .terms-content h4{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
     color: #fff;
 }
 .terms-content p{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
@@ -879,7 +877,6 @@ html {
     color: white;
 }
 .email_register h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -892,7 +889,6 @@ html {
     color: black;
 }
 .email_register_box h6{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 10px;
     line-height: 21px;
@@ -994,7 +990,6 @@ input[type="checkbox"]{
     color: white;
 }
 .email_login h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -1007,7 +1002,6 @@ input[type="checkbox"]{
     color: black;
 }
 .email_login_box h6{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 12px;
     line-height: 21px;
@@ -1059,7 +1053,6 @@ input[type="checkbox"]{
 }
 
 .register-complete h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -1070,7 +1063,6 @@ input[type="checkbox"]{
     margin: 5% 0 20%;
 }
 .register-complete h4 a{
-    font-family: "Noto Sans";
     font-weight: bold;
     font-size: 24px;
     text-align: center;
@@ -1091,7 +1083,6 @@ input[type="checkbox"]{
     color: white;
 }
 .register-complete-box h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -1147,7 +1138,6 @@ input[type="checkbox"]{
     color: white;
 }
 .pwd-reset-box h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -1160,7 +1150,6 @@ input[type="checkbox"]{
     color: black;
 }
 .pwd-reset-inner h6{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 12px;
     line-height: 30px;
@@ -1220,7 +1209,6 @@ input[type="checkbox"]{
     color: white;
 }
 .pwd_reset_complete h2{
-    font-family: "Noto Sans";
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -1233,7 +1221,6 @@ input[type="checkbox"]{
     color: black;
 }
 .pwd_reset_complete_box h6{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 10px;
     line-height: 21px;
@@ -2059,7 +2046,6 @@ select:-moz-focusring {
 /* lesson management page */
 
 .btn-lesson-add{
-    font-family: "Noto Sans";
     font-weight: bold;
     font-size: 16px;
     text-align: right;
@@ -2100,14 +2086,12 @@ select:-moz-focusring {
     width: 68%;
 }
 .lesson-content h5{
-    font-family: "Noto Sans";
     font-weight: bold;
     font-size: 18px;
     text-align: left;
     color: #000;
 }
 .lesson-content p{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 14px;
     text-align: left;
@@ -2158,14 +2142,12 @@ select:-moz-focusring {
     font-style: normal;
 }
 .lesson-state h2{
-    font-family: "Noto Sans";
     font-weight: bold;
     font-size: 35px;
     text-align: left;
     color: #000;
 }
 .lesson-state h2 span{
-    font-family: "Noto Sans";
     font-size: 16px;
     text-align: left;
     color: #000;
@@ -2173,7 +2155,6 @@ select:-moz-focusring {
 }
 .lesson-box a{
     text-align: right;
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 12px;
     text-align: left;
@@ -2201,7 +2182,6 @@ select:-moz-focusring {
     width: 10%;
 }
 .project-option{
-    font-family: "Noto Sans";
     font-weight: normal;
     font-size: 12px;
     text-align: left;
