@@ -323,6 +323,9 @@ p.slide{
 .contact button {
     margin: 10% 0 5%;
 }
+.contact-caption h2{
+    font-size: 10vw;
+}
 
 /* btn-fixed */
 .btn-fixed{
@@ -1370,7 +1373,12 @@ p.published{
 .top p {
     margin: 4% 0 0;
 }
-
+.login{
+    padding: 20px;
+}
+.register{
+    padding: 20px 40px;
+}
 /*  intro */
 .intro{
     padding: 10% 5%;
@@ -1453,7 +1461,7 @@ p.published{
     padding: 10% 5% 20%;
     overflow: hidden;
     background-image: -webkit-linear-gradient(-83deg, black 80%, #D1C74E 20%);
-    margin-bottom: -20%;
+    margin-bottom: -23%;
 }
 .arrow-right{
     left: 260px;
@@ -1523,7 +1531,7 @@ p.published{
     position: relative;
     height: 100%;
 }
-.page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer, .page-mail-login .footer{
+.page-company .footer, .page-login-main .footer, .page-pwd-reset-complete .footer, .page-email-register-temp .footer, .page-email-register .footer, .page-mail-login .footer, .page-pwd-reset .footer, .page-register-complete .footer{
     /*position: absolute;*/
     background: #313131;
     color: #fff;
@@ -1534,10 +1542,13 @@ p.published{
     width: 100%;
     box-sizing: border-box;
 }
-
+.page-mail-login .footer, .page-email-register .footer, .page-pwd-reset-complete .footer, .page-pwd-reset .footer, .page-register-complete .footer{
+    position: absolute;
+}
 .login-main{
     padding: 10vh 20% 32vh;
 }
+
 
 /* Mypage Top */
 
@@ -1870,7 +1881,9 @@ p.published{
     align-items: center;
 }
 
-
+.page-register .select-box a {
+    padding: 4% 16%;
+}
 
 
 
