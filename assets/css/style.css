@@ -127,6 +127,8 @@ a.btn-login button:hover{
     background-size: 5px 5px, 5px 5px;
     background-repeat: no-repeat;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
 }
 .register a{
     color: white;
@@ -150,6 +152,8 @@ a.btn-login button:hover{
     background-size: 5px 5px, 5px 5px;
     background-repeat: no-repeat;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
 }
 .login img{
     margin-right: 15px;
@@ -330,7 +334,7 @@ a.top-register button:hover{
     width: 50%;
 }
 .character-img img{
-    width: -webkit-fill-available;
+    width: 100%;
 }
 .character-content{
     text-align: left;
@@ -673,7 +677,7 @@ a.top-register button:hover{
     font-weight: bold;
     font-size: 20px;
     color: black;
-    margin-left: 3%;
+    margin: 0 3%;
 }
 .ans p:first-child{
     color: white;
@@ -1620,7 +1624,7 @@ input[type="checkbox"]{
 }
 .notice-bell, .notice-message{
     position: relative;
-    padding: 0 25%;
+    padding: 0 12%;
     display: flex;
 }
 .inquiry{
@@ -1696,7 +1700,7 @@ input[type="checkbox"]{
 .userinfo-title{
     padding: 2% 0;
     border-bottom: 5px solid black;
-    font-size: 16px!important;
+    font-size: 12px!important;
 }
 .mypage input{
     padding-left: 0;
@@ -1937,10 +1941,10 @@ textarea{
     align-items: center;
 }
 .userinfo-input label{
-    font-size: 14px;
+    font-size: 16px;
 }
 .userinfo-input input, .userinfo-input select, .userinfo-input textarea{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Noto Sans JP","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
 }
 #ques, #ans{
@@ -1991,6 +1995,7 @@ textarea{
 .photo-add span{
     width: 250px;
     text-align: left;
+    font-size: 16px;
 }
 .photo-add p{
     width: auto;
