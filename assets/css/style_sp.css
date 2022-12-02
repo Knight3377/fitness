@@ -1540,9 +1540,9 @@ p.published{
     width: 100%;
     box-sizing: border-box;
 }
-.page-mail-login .footer, .page-email-register .footer, .page-pwd-reset-complete .footer, .page-pwd-reset .footer, .page-register-complete .footer{
+/*.page-mail-login .footer, .page-email-register .footer, .page-pwd-reset-complete .footer, .page-pwd-reset .footer, .page-register-complete .footer{
     position: absolute;
-}
+}*/
 .login-main{
     padding: 10vh 20% 32vh;
 }
